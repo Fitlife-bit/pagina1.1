@@ -1,0 +1,345 @@
+body {
+  background-image: linear-gradient(#265e2d, #4fc45e);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔤 Tipografías */
+@font-face { font-family: tot; src: url(fuentes/fonnv.otf); }
+@font-face { font-family: tit; src: url(fuentes/gre.otf); }
+
+/* 🟢 Título Principal */
+.kble {
+  font-family: tit;
+  font-size: 50px;
+  text-align: center;
+  margin-top: -12px;
+}
+
+/* 🟢 Navegación */
+.nav {
+  border-radius: 25pt;
+  color: white;
+  background-color: green;
+  z-index: 2;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.nav ul {
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 10px;
+}
+
+.nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20pt;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 🟢 Sección Principal */
+.listo {
+  text-align: center;
+  padding: 20px;
+  font-family: tit;
+}
+
+.r {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* 🟢 Botón */
+button {
+  color: black;
+  border-radius: 50px;
+  display: block;
+  margin: 20px auto;
+  height: 60px;
+  padding: 10px 20px;
+  background-color: #63C56E;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button:hover {
+  background-color: #4fa757;
+}
+
+/* 🟢 Responsividad */
+@media screen and (max-width: 1024px) {
+  .nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav ul li {
+      margin: 5px 0;
+  }
+
+  .kble {
+      font-size: 40px;
+  }
+
+  .r {
+      font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kble {
+      font-size: 35px;
+  }
+
+  .nav ul li a {
+      font-size: 18pt;
+  }
+
+  .r {
+      font-size: 50px;
+  }
+
+  button {
+      height: 50px;
+      font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .kble {
+      font-size: 28px;
+  }
+
+  .nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav ul li a {
+      font-size: 16pt;
+  }
+
+  .r {
+      font-size: 40px;
+  }
+
+  button {
+      height: 45px;
+      font-size: 0.9rem;
+  }
+}
+i{
+  margin-left: 20%;
+  margin-top: 45%;
+}
+.dere{
+  color: #fff;
+}
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid #fff;
+  }
+  
+  footer .container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 4rem;
+  }
+  
+  footer .container .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 27%;
+  }
+  
+  footer .container .link-container {
+    width: 70%;
+    display: flex;
+    gap: 10rem;
+  }
+  
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  footer .container .profile .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  footer .container .profile .logo img {
+    width: 220px;
+    height: 200px;
+  }
+  
+  footer .container .profile .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  footer .container .profile p {
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  
+  footer .container .profile .social-media-container {
+    display: flex;
+    gap: 8px;
+  }
+  
+  footer .container .profile .social-media-container .social-media {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #2f2f2f;
+    transition: transform 1s linear;
+  }
+  
+  footer .container .profile .social-media-container .social-media:hover {
+    transform: rotateY(360deg);
+  }
+  
+  footer .container .link-container .information h1,
+  footer .container .link-container .resource h1,
+  footer .container .link-container .navigation h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .container .link-container .information ul,
+  footer .container .link-container .resource ul,
+  footer .container .link-container .navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  footer .container .link-container .information ul li,
+  footer .container .link-container .resource ul li,
+  footer .container .link-container .navigation ul li {
+    cursor: pointer;
+  }
+  
+  footer .container .link-container .information ul li::after,
+  footer .container .link-container .resource ul li::after,
+  footer .container .link-container .navigation ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #fff;
+    width: 40%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s linear;
+    margin-top: 8px;
+  }
+  
+  footer .container .link-container .information ul li:hover::after,
+  footer .container .link-container .resource ul li:hover::after,
+  footer .container .link-container .navigation ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.6s linear;
+  }
+  
+  footer .container .link-container .information ul li a,
+  footer .container .link-container .resource ul li a,
+  footer .container .link-container .navigation ul li a {
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 1536px) {
+    footer .container {
+      gap: 2rem;
+    }
+    footer .container .link-container {
+      gap: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    footer .container .link-container .information ul li::after,
+    footer .container .link-container .resource ul li::after,
+    footer .container .link-container .navigation ul li::after {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    footer .container {
+      padding: 1rem 2rem;
+    }
+    footer .container .profile {
+      width: 50%;
+    }
+    footer .container .link-container {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    footer .container .link-container .information ul li::after,
+    footer .container .link-container .resource ul li::after,
+    footer .container .link-container .navigation ul li::after {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 610px) {
+    footer .container .profile,
+    footer .container .link-container {
+      width: 100%;
+    }
+  
+    footer .container .link-container .information,
+    footer .container .link-container .resource,
+    footer .container .link-container .navigation {
+      width: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    footer .container .link-container .information,
+    footer .container .link-container .resource,
+    footer .container .link-container .navigation {
+      width: 50%;
+    }
+  }
+  footer{
+    background-color: black;
+  }

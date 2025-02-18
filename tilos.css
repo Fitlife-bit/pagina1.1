@@ -1,0 +1,529 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face { 
+  font-family: tot; 
+  src: url(fuentes/fonnv.otf);
+}
+
+@font-face { 
+  font-family: tit; 
+  src: url(fuentes/gre.otf);
+}
+
+/* Navbar */
+.nav {
+  border-radius: 25pt;
+  color: white;
+  z-index: 2;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem;
+}
+
+
+
+/* Fondo */
+.fond {
+  width: 100%;
+  min-height: 600px;
+  background-color: rgb(33, 36, 38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gradiente */
+.gra {
+  background-image: linear-gradient(#300001 , #000000 );
+  width: 100%;
+  height: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .titulo {
+      font-size: 3rem;
+  }
+  .nav ul {
+      gap: 1rem;
+  }
+  .nav ul li a {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+      font-size: 2.5rem;
+  }
+  .nav {
+      flex-direction: column;
+      align-items: center;
+  }
+  .nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  .fond {
+      padding: 10% 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+      font-size: 2rem;
+  }
+  .nav ul li a {
+      font-size: 1rem;
+  }
+  .fond {
+      min-height: 400px;
+  }
+}
+
+/* slider */
+
+.containe {
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.carousel-containe {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+.carousel-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active { background-color: #717171; }
+
+/*footer*/
+
+
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid #fff;
+  display: flex;
+  
+}
+
+footer .container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 4rem;
+  
+  
+}
+
+footer .container .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 27%;
+  
+}
+
+footer .container .link-container {
+  width: 70%;
+  display: flex;
+  gap: 10rem;
+}
+
+footer .container .link-container .information,
+footer .container .link-container .resource,
+footer .container .link-container .navigation {
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  width: 50%;
+}
+
+footer .container .profile .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .container .profile .logo img {
+  width: 220px;
+  height: 200px;
+}
+
+footer .container .profile .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer .container .profile p {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+footer .container .profile .social-media-container {
+  display: flex;
+  gap: 10px;
+}
+i{
+  margin-left: 20%;
+  margin-top: 45%;
+}
+footer .container .profile .social-media-container .social-media {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  justify-content: center;
+  color: #fff;
+  background-color: #2c2c2c;
+  transition: transform 1s linear;
+}
+.dere{
+  color: #fff;
+}
+footer .container .profile .social-media-container .social-media:hover {
+  transform: rotateY(360deg);
+}
+
+footer .container .link-container .information h1,
+footer .container .link-container .resource h1,
+footer .container .link-container .navigation h1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+footer .container .link-container .information ul,
+footer .container .link-container .resource ul,
+footer .container .link-container .navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .container .link-container .information ul li,
+footer .container .link-container .resource ul li,
+footer .container .link-container .navigation ul li {
+  cursor: pointer;
+}
+
+footer .container .link-container .information ul li::after,
+footer .container .link-container .resource ul li::after,
+footer .container .link-container .navigation ul li::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #fff;
+  width: 40%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s linear;
+  margin-top: 8px;
+}
+
+footer .container .link-container .information ul li:hover::after,
+footer .container .link-container .resource ul li:hover::after,
+footer .container .link-container .navigation ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.6s linear;
+}
+
+footer .container .link-container .information ul li a,
+footer .container .link-container .resource ul li a,
+footer .container .link-container .navigation ul li a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1536px) {
+  footer .container {
+    gap: 2rem;
+  }
+  footer .container .link-container {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer .container .link-container .information ul li::after,
+  footer .container .link-container .resource ul li::after,
+  footer .container .link-container .navigation ul li::after {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .container {
+    padding: 1rem 2rem;
+  }
+  footer .container .profile {
+    width: 50%;
+  }
+  footer .container .link-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .container .link-container .information ul li::after,
+  footer .container .link-container .resource ul li::after,
+  footer .container .link-container .navigation ul li::after {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  footer .container .profile,
+  footer .container .link-container {
+    width: 100%;
+  }
+
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    width: 50%;
+  }
+}
+
+
+
+.titulo{
+justify-content: center;
+font-size: 60pt;
+color: #fff;
+display: grid;
+background: none;
+font-family: tit;
+
+}
+
+.char{
+place-items: center;
+background: none;
+}
+.fond{
+  width: 100%;
+  height: 600pt;
+
+  --c-0: hsla(55.58823529411776, 0%, 100%, 0.86);
+  --y-0: 98%;
+  --x-0: 98%;
+  --y-1: 91%;
+  --c-1: hsla(352.71844660194176, 98%, 41%, 1);
+  --x-1: 98%;
+  --x-2: 16%;
+  --c-2: hsla(358.75, 100%, 9%, 1);
+  --y-2: 87%;
+  --x-3: 52%;
+  --c-3: hsla(289.9038461538462, 86%, 47%, 1);
+  --y-3: 79%;
+  ;
+  background-color: rgb(33, 36, 38);
+  background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3));
+  background-blend-mode: overlay, normal, normal, normal;
+  justify-content: center;
+  justify-items: center;
+ 
+}
+
+@property --y-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 98%;
+}
+
+@property --s-start-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%
+}
+
+@property --s-end-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 78.72573401919361%
+}
+
+@property --x-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 98%
+}
+
+@property --y-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 91%
+}
+
+@property --c-1 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(352.71844660194176, 98%, 41%, 1)
+}
+
+@property --s-start-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%
+}
+
+@property --s-end-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 78.72573401919361%
+}
+
+@property --x-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 98%
+}
+
+@property --x-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 16%
+}
+
+@property --c-2 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(358.75, 100%, 9%, 1)
+}
+
+@property --s-start-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%
+}
+
+@property --s-end-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 61.288600779667334%
+}
+
+@property --y-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 87%
+}
+
+@property --x-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 52%
+}
+
+@property --s-start-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%
+}
+
+@property --s-end-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 61.288600779667334%
+}
+
+@property --c-3 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(289.9038461538462, 86%, 47%, 1)
+}
+
+@property --y-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 79%
+}

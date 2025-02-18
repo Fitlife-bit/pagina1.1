@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPRESAS</title>
+    <link rel="stylesheet" href="tilos.css">
+    <script src="https://kit.fontawesome.com/149be14211.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="IMG/ico.ico">
+    
+</head>
+<body>
+  <a id="inicio"></a>
+<header>
+  <nav class="nav">
+    <ul>
+        <li> <a href="HOME.html"> inicio</a> </li>
+        <li> <a href="SERVICIOS.html">servicios</a> </li>
+        <li> <a href="EMPRESAS.html">empresa</a> </li>
+        <li> <a href="TESTIMONIOS.html">testimonios</a> </li>
+        <li> <a href="CTA.html">contacto</a> </li>
+    </ul>
+  </nav>
+</header>
+  
+
+    <div class="fond">
+      <div class="char"> 
+        <h2 class="titulo"> empresas que gestiono</h2>
+      </div>
+    </div>
+    <div class="gra"></div>
+
+    
+
+  <div class="centrar">
+    <div class="containe">
+        <div class="carousel-containe">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="IMG/mex.jpg" alt="Imagen 1">
+                    <div class="carousel-text">En México, ayudamos a empresas a expandir su alcance digital mediante estrategias de marketing adaptadas a las necesidades específicas del mercado mexicano, con un enfoque en resultados a largo plazo.</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/usa.jpg" alt="Imagen 2">
+                    <div class="carousel-text">Nuestro enfoque en Estados Unidos se basa en crear campañas poderosas que aumentan la visibilidad de marcas en un mercado competitivo, utilizando todas las herramientas digitales disponibles.</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/col.jpg" alt="Imagen 3">
+                    <div class="carousel-text">Nos especializamos en ofrecer soluciones digitales de vanguardia para empresas colombianas, aumentando la visibilidad y el engagement a través de campañas personalizadas y eficaces.</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/green.jpg" alt="Imagen 4">
+                    <div class="carousel-text">Un evento único dedicado a la celebración de la música, el arte y la cultura. Creamos experiencias memorables para los asistentes, integrando el marketing digital para maximizar la participación y el impacto en las redes sociales</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/esp.jpg" alt="Imagen 5">
+                    <div class="carousel-text">En España, trabajamos con marcas locales y globales, ayudándolas a mejorar su presencia online mediante campañas de marketing digital eficientes y estrategias orgánicas.</div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="dots">
+                <span class="dot" onclick="setSlide(0)"></span>
+                <span class="dot" onclick="setSlide(1)"></span>
+                <span class="dot" onclick="setSlide(2)"></span>
+                <span class="dot" onclick="setSlide(3)"></span>
+                <span class="dot" onclick="setSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        const carousel = document.querySelector('.carousel');
+        const totalImages = document.querySelectorAll('.carousel-item').length;
+        const dots = document.querySelectorAll('.dot');
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        function moveSlide(step) {
+            index = (index + step + totalImages) % totalImages;
+            updateCarousel();
+        }
+
+        function setSlide(slideIndex) {
+            index = slideIndex;
+            updateCarousel();
+        }
+
+        function autoSlide() {
+            moveSlide(1);
+        }
+
+        setInterval(autoSlide, 3000);
+        updateCarousel();
+    </script>
+  </div>
+
+<!--  -->
+<footer>
+  <div class="container">
+      <div class="profile">
+        <div class="logo">
+          <img src="IMG/logo de sf.png" alt="logo" />
+          <a href=""></a>
+        </div>
+
+        
+        <div class="social-media-container">
+          <div class="social-media">
+            
+            <i class="fa-brands fa-meta fa-xl " ></i>
+          </div>
+          <div class="social-media">
+            
+           <i class="fa-brands fa-instagram fa-xl"></i>
+
+          </div>
+          <div class="social-media">
+            
+            <i class="fa-brands fa-tiktok fa-xl"></i>
+
+          </div>
+
+          <div class="social-media">
+            <i class="fa-brands fa-google fa-xl"></i>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="link-container">
+        <div class="information">
+          <h1>INFORMACIÓN</h1>
+          <ul>
+            <li>
+              <a href="HOME.html">NOSOTROS</a>
+            </li>
+            <li>
+              <a href="CTA.html">CONTACTO</a>
+            </li>
+            <li>
+              <a href="EMPRESAS.html">EMPRESA</a>
+            </li>
+           
+          </ul>
+        </div>
+
+        <div class="navigation">
+          <h1>NAVEGACIÓN</h1>
+          <ul>
+            <li>
+              <a href="#inicio">INICIO</a>
+            </li>
+            <li>
+              <a href="SERVICIOS.html">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="TESTIMONIOS.html">TESTIMONIOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+</footer>
+<footer class="copy">
+<p class="dere">&copy; 2025 Santiago Lozano. Todos los derechos reservados.</p>
+</footer>
+    
+</body>
+</html>

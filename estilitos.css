@@ -1,0 +1,341 @@
+/* Estilos Globales */
+* {
+  background-color: #000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+}
+@font-face { font-family: tot; src: url(fuentes/fonnv.otf); }
+@font-face { font-family: tit; src: url(fuentes/gre.otf); }
+
+/* 🟢 Título */
+.titulo {
+  font-family: tit;
+  border-radius: 50%;
+  height: 60pt;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* 🟢 Navegación */
+.nav {
+  border-radius: 25pt;
+  color: white;
+  z-index: 2;
+  padding: 15px 10%;
+  text-align: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 10px;
+}
+
+.nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15pt;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 🟢 Formulario de Contacto */
+.contact-section {
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  height: auto;
+}
+
+.contact-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+input, textarea {
+  color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form button {
+  background: #ff0000;
+  border: none;
+  color: #000000;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: bisque;
+}
+
+
+
+/* 🟢 Responsividad */
+@media screen and (max-width: 1024px) {
+  .nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .contact-section {
+      padding: 2rem;
+  }
+
+  .titulo {
+      width: 90%;
+      height: auto;
+      font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-section h2 {
+      font-size: 2rem;
+  }
+
+  
+}
+
+@media screen and (max-width: 480px) {
+  .titulo {
+      font-size: 1.2rem;
+      text-align: center;
+  }
+
+  .nav ul li a {
+      font-size: 12pt;
+  }
+
+  
+}
+
+
+
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid #fff;
+  
+}
+
+footer .container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 4rem;
+  
+}
+
+footer .container .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 27%;
+}
+
+footer .container .link-container {
+  width: 70%;
+  display: flex;
+  gap: 10rem;
+}
+
+footer .container .link-container .information,
+footer .container .link-container .resource,
+footer .container .link-container .navigation {
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  width: 50%;
+}
+
+footer .container .profile .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .container .profile .logo img {
+  width: 220px;
+  height: 200px;
+}
+
+footer .container .profile .logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer .container .profile p {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+footer .container .profile .social-media-container {
+  display: flex;
+  gap: 8px;
+}
+
+footer .container .profile .social-media-container .social-media {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  
+  border-radius: 50%;
+  background-color: #2f2f2f;
+  transition: transform 1s linear;
+  
+}
+
+footer .container .profile .social-media-container .social-media:hover {
+  transform: rotateY(360deg);
+}
+
+footer .container .link-container .information h1,
+footer .container .link-container .resource h1,
+footer .container .link-container .navigation h1 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+footer .container .link-container .information ul,
+footer .container .link-container .resource ul,
+footer .container .link-container .navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .container .link-container .information ul li,
+footer .container .link-container .resource ul li,
+footer .container .link-container .navigation ul li {
+  cursor: pointer;
+}
+
+footer .container .link-container .information ul li::after,
+footer .container .link-container .resource ul li::after,
+footer .container .link-container .navigation ul li::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #fff;
+  width: 40%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s linear;
+  margin-top: 8px;
+}
+
+footer .container .link-container .information ul li:hover::after,
+footer .container .link-container .resource ul li:hover::after,
+footer .container .link-container .navigation ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.6s linear;
+}
+
+footer .container .link-container .information ul li a,
+footer .container .link-container .resource ul li a,
+footer .container .link-container .navigation ul li a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1536px) {
+  footer .container {
+    gap: 2rem;
+  }
+  footer .container .link-container {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer .container .link-container .information ul li::after,
+  footer .container .link-container .resource ul li::after,
+  footer .container .link-container .navigation ul li::after {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .container {
+    padding: 1rem 2rem;
+  }
+  footer .container .profile {
+    width: 50%;
+  }
+  footer .container .link-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .container .link-container .information ul li::after,
+  footer .container .link-container .resource ul li::after,
+  footer .container .link-container .navigation ul li::after {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  footer .container .profile,
+  footer .container .link-container {
+    width: 100%;
+  }
+
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    width: 50%;
+  }
+}
+i{
+  margin-left: 20%;
+  margin-top: 45%;
+  color: #fff;
+}

@@ -23,7 +23,7 @@
   z-index: 2;
   padding: 1rem 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -56,7 +56,7 @@
 
 /* Gradiente */
 .gra {
-  background-image: linear-gradient(#300001 , #000000 );
+  background-image: linear-gradient(#252525 , #000000 );
   width: 100%;
   height: 80px;
 }
@@ -105,72 +105,77 @@
 
 /* slider */
 
-.containe {
-    display: flex;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.carousel-containe {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+.carousel-container {
+  position: relative;
 }
 .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 .carousel-item {
-    position: relative;
-    width: 100%;
-    flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.carousel img {
-    width: 100%;
-    border-radius: 10px;
+.carousel-item img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Espacio entre imagen y texto */
 }
 .carousel-text {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+  font-size: 200%;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  text-align: center;
 }
 .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .prev { left: 10px; }
 .next { right: 10px; }
 .dots {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  margin: 10px 0;
 }
 .dot {
-    height: 10px;
-    width: 10px;
-    margin: 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
-
-.active { background-color: #717171; }
-
+.dot.active, .dot:hover {
+  background-color: #717171;
+}
 /*footer*/
 
 
@@ -187,7 +192,6 @@ footer {
 footer .container {
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   gap: 4rem;
@@ -377,10 +381,10 @@ footer .container .link-container .navigation ul li a {
 
 .titulo{
 justify-content: center;
-font-size: 60pt;
+margin-top: -20%;
+font-size: 42pt;
 color: #fff;
 display: grid;
-background: none;
 font-family: tit;
 
 }
@@ -391,139 +395,10 @@ background: none;
 }
 .fond{
   width: 100%;
-  height: 600pt;
+  height: 70rem;
+  background-image: url("IMG/colla.png");
+  background-size: cover;
 
-  --c-0: hsla(55.58823529411776, 0%, 100%, 0.86);
-  --y-0: 98%;
-  --x-0: 98%;
-  --y-1: 91%;
-  --c-1: hsla(352.71844660194176, 98%, 41%, 1);
-  --x-1: 98%;
-  --x-2: 16%;
-  --c-2: hsla(358.75, 100%, 9%, 1);
-  --y-2: 87%;
-  --x-3: 52%;
-  --c-3: hsla(289.9038461538462, 86%, 47%, 1);
-  --y-3: 79%;
-  ;
-  background-color: rgb(33, 36, 38);
-  background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3));
-  background-blend-mode: overlay, normal, normal, normal;
-  justify-content: center;
-  justify-items: center;
  
-}
 
-@property --y-0 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 98%;
-}
-
-@property --s-start-0 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 2%
-}
-
-@property --s-end-0 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 78.72573401919361%
-}
-
-@property --x-0 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 98%
-}
-
-@property --y-1 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 91%
-}
-
-@property --c-1 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: hsla(352.71844660194176, 98%, 41%, 1)
-}
-
-@property --s-start-1 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 2%
-}
-
-@property --s-end-1 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 78.72573401919361%
-}
-
-@property --x-1 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 98%
-}
-
-@property --x-2 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 16%
-}
-
-@property --c-2 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: hsla(358.75, 100%, 9%, 1)
-}
-
-@property --s-start-2 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 2%
-}
-
-@property --s-end-2 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 61.288600779667334%
-}
-
-@property --y-2 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 87%
-}
-
-@property --x-3 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 52%
-}
-
-@property --s-start-3 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 2%
-}
-
-@property --s-end-3 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 61.288600779667334%
-}
-
-@property --c-3 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: hsla(289.9038461538462, 86%, 47%, 1)
-}
-
-@property --y-3 {
-  syntax: '<percentage>';
-  inherits: false;
-  initial-value: 79%
 }

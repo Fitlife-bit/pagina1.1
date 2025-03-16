@@ -13,10 +13,12 @@
 
 .bi{
   margin-top: 2%;
+  margin-left: 50%;
   opacity: 60%;
   font-size: 10pt;
   background-color: rgb(55, 53, 53);
   border-radius: 10%;
+  text-align: center;
 }
 .opi{
   height: 90pt;
@@ -35,7 +37,7 @@
   padding: 20px;
 }
 .inv{
-  height: 20px;
+  height: 70px;
   width: 50%;
 }
 
@@ -70,9 +72,11 @@ textarea:focus {
   outline: none;
 }
 .come{
-  font-size: 10pt;
+  font-size: 12pt;
   opacity: 60% ;
   background:none;
+  margin-left: 40%;
+  margin-top: 10%;
   
 }
 
@@ -96,17 +100,18 @@ button:hover {
 
 .clientes {/**/
   
-  height: 259px;
+  height: 350px;
   background: linear-gradient(135deg, #2c3036, #121a26, #22272e);
   margin-top: 9%;
   display: flex;
   justify-content: space-around;
   padding: 2% 5%;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 
-.text1, .text2, .text3, .text4, .text5 {
+.text1, .text2, .text4, .text5 {
   height: 180px;
   width: 180px;
   border-radius: 100%;
@@ -117,7 +122,6 @@ button:hover {
 
 .text1 { background-image: url("IMG/p4.jpg"); }
 .text2 { background-image: url("IMG/p2.jpg"); }
-.text3 { background-image: url("IMG/p3.jpg"); }
 .text4 { background-image: url("IMG/p1.jpg"); }
 .text5 { background-image: url("IMG/p5.jpg"); }
 
@@ -146,7 +150,7 @@ h2{
  justify-content: center;
  align-items: center;
  width: 100%; 
-  
+ margin-top: 2%;
   
   
 
@@ -205,7 +209,7 @@ h2{
       align-items: center;
   }
 
-  .text1, .text2, .text3, .text4 {
+  .text1, .text2, .text4, .text5 {
       height: 120px;
       width: 120px;
   }
@@ -225,7 +229,7 @@ h2{
       margin-top: 10%;
   }
 
-  .text1, .text2, .text3, .text4, .text5{
+  .text1, .text2, .text4, .text5{
       height: 100px;
       width: 100px;
   }
@@ -240,7 +244,7 @@ h2{
       padding-top: 5%;
   }
 
-  .text1, .text2, .text3, .text4 {
+  .text1, .text2, .text4, .text5 {
       height: 80px;
       width: 80px;
   }
@@ -455,3 +459,4 @@ footer .container .link-container .navigation ul li a {
 .copy{
   color: white;
 }
+

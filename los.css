@@ -1,15 +1,16 @@
 body {
-  background-image: linear-gradient(#265e2d, #4fc45e);
+  background-image: url("IMG/colla.png");
+  background-size: cover;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 🔤 Tipografías */
+/*  Tipografías */
 @font-face { font-family: tot; src: url(fuentes/fonnv.otf); }
 @font-face { font-family: tit; src: url(fuentes/gre.otf); }
 
-/* 🟢 Título Principal */
+/*  Título Principal */
 .kble {
   font-family: tit;
   font-size: 50px;
@@ -17,11 +18,10 @@ body {
   margin-top: -12px;
 }
 
-/* 🟢 Navegación */
+/*  Navegación */
 .nav {
   border-radius: 25pt;
   color: white;
-  background-color: green;
   z-index: 2;
   width: 100%;
   padding: 10px 0;
@@ -30,6 +30,7 @@ body {
 .nav ul {
   justify-content: center;
   list-style-type: none;
+  background: linear-gradient(45deg, black, transparent);
   display: flex;
   padding: 0;
 }
@@ -46,7 +47,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* 🟢 Sección Principal */
+/*  Sección Principal */
 .listo {
   text-align: center;
   padding: 20px;
@@ -55,36 +56,94 @@ body {
 
 .r {
   color: white;
-  font-size: 50px;
+  font-size: 400%;
   text-align: center;
+  background: radial-gradient(black, transparent);
+  margin-top: 20%;
 }
 
-/* 🟢 Botón */
-button {
-  color: black;
-  border-radius: 50px;
-  display: block;
-  margin: 20px auto;
-  height: 60px;
-  padding: 10px 20px;
-  background-color: #63C56E;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
-  border: none;
+/*  Botón */
+.cen{
+  font-family: tit;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 button a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 button:hover {
   background-color: #4fa757;
 }
 
-/* 🟢 Responsividad */
+button {
+
+  
+
+
+
+  transition: background 0.3s;
+  height: 100px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-size: 70px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #1e5128;
+  color: ghostwhite;
+ }
+ 
+ button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+ }
+ 
+ button:hover span {
+  color: black;
+ }
+ 
+ button::before,
+ button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+ }
+ 
+ button::before {
+  content: "";
+  background: #282828;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ }
+ 
+ button:hover::before {
+  transform: translate3d(100%, 0, 0);
+ }
+ 
+
+ 
+
+
+/* Responsividad */
 @media screen and (max-width: 1024px) {
   .nav ul {
       flex-direction: column;
@@ -343,3 +402,4 @@ footer {
   footer{
     background-color: black;
   }
+  

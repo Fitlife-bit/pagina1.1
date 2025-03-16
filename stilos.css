@@ -580,6 +580,8 @@ float: right;
 }
 
 #lista{
+  display:inline-flex;
+  justify-content:center;
   text-decoration: none;
   min-width: 60px;
 }

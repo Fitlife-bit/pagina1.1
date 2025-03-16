@@ -14,7 +14,7 @@ body{
   background-color: black;
 }
 .nav{
-  background-color: #005aaf;
+  
   border-radius: 20px;
 }
 .n{
@@ -42,9 +42,41 @@ color: white;
   text-align: center;
 }
 }
+#ti{
+  font-family: tit;
+  font-size: 200%;
+  margin-top: -20%;
+
+}
+#titul{
+font-family: tit;
+font-size: 200%;
+margin-top: -6%;
+}
+#titu{
+font-family: tit;
+font-size: 200%;
+margin-top: 5%;
+}
+
+
+
 
 #let{
-font-size: 110%;
+font-size: 120%;
+text-align: center;
+margin-top: 45%;
+}
+#lett{
+  font-size: 120%;
+  text-align: center;
+  margin-top: 15%;
+
+}
+#lettt{
+  font-size: 120%;
+  text-align: center;
+  
 }
 #titulo{
   font-size: 330%;
@@ -56,7 +88,17 @@ font-size: 160%;
 }
 .pasto{
 font-family: tit;
-font-size: 150%;
+font-size: 190%;
+margin-top: -3%;
+}
+.in{
+  font-size: 140%;
+  text-align: justify;
+}
+.pasto1{
+  font-family: tit;
+  font-size: 300%;
+  margin-top: 0;
 }
 .bienvenida{ 
   float: left;
@@ -73,6 +115,7 @@ font-size: 150%;
   background-repeat: no-repeat;
   border-radius: 3%;
   margin-top: 2%;
+  opacity: 60%;
 }
 @media (max-width: 700px) {
 .der {
@@ -106,9 +149,10 @@ margin-top: 1%;
 }
 .abajo{
 display: flex;
-margin-top: 10pt;
+margin-top: 1%;
 justify-content: space-evenly;
 flex-wrap: wrap;
+margin-left: 4%;
 }
 .gra{
   background-image: url("IMG/mar.jpg");
@@ -128,7 +172,7 @@ flex-wrap: wrap;
 .pub{
 height: fit-content;
 width: 45%;
-max-width: 200px;
+max-width: 220px;
 padding: 1%;
 border-radius: 20px;
 background-color: #413f3f;
@@ -139,7 +183,7 @@ min-height: 290px;
 min-height: 290px;
 height: fit-content;
 width: 45%;
-max-width: 200px;
+max-width: 230px;
 padding: 1%;
 border-radius: 20px;
 background-color: #413f3f;
@@ -175,10 +219,10 @@ background-color: #413f3f;
 line-height: 150%;
 }
 .klm{
-min-height: 300px;
+min-height: 290px;
 height: fit-content;
 width: 33.3%;
-max-width: 220px;
+max-width: 300px;
 padding: 1%;
 border-radius: 20px;
 background-color: #413f3f;
@@ -202,7 +246,7 @@ line-height: 150%;
 /* fin segunda diapo*/
 
 .nde{
-  margin-top: 10pt;
+  margin-top: 5%;
   background: url("IMG/gen.jpg") no-repeat center center;
   background-size: cover;
   min-height: 300px; /* Ajusta según contenido */
@@ -210,9 +254,9 @@ line-height: 150%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  gap: 20px; /* Espaciado entre elementos */
+ 
   align-items: center;
-  justify-items: center; 
+  justify-items: center;
 }
 .ter{
 margin-top: 2%;
@@ -267,6 +311,7 @@ grid-column: 3;
 
 footer {
   display: flex;
+  margin-top: 2%;
   align-items: center;
   width: 100%;
   border-top: 2px solid #fff;

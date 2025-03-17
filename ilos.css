@@ -76,6 +76,7 @@ textarea:focus {
   opacity: 60% ;
   background:none;
   margin-top: 10%;
+  display: table-caption;
   
 }
 

@@ -650,8 +650,20 @@ button:hover::before {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
   background-color: #00d757;
 }
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  background: #00d757;
+}
 
 .sign {
+  background:#00d757;
   width: 100%;
   transition-duration: 0.3s;
   display: flex;

@@ -570,16 +570,7 @@ button:hover::before {
 .sign svg path {
   fill: white;
 }
-.text {
-  position: absolute;
-  right: 0%;
-  width: 0%;
-  opacity: 0;
-  color: white;
-  font-size: 1em;
-  font-weight: 600;
-  transition-duration: 0.3s;
-}
+
 
 .Btn {
   display: flex;
@@ -678,16 +669,7 @@ button:hover::before {
 .sign svg path {
   fill: white;
 }
-.text {
-  position: absolute;
-  right: 0%;
-  width: 0%;
-  opacity: 0;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 600;
-  transition-duration: 0.3s;
-}
+
 
 .Btn:hover {
   width: 150px;

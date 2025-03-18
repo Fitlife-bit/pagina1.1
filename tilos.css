@@ -555,13 +555,7 @@ button:hover::before {
 }
 
 
-.sign {
-  width: 100%;
-  transition-duration: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .sign svg {
   width: 25px;
@@ -598,6 +592,7 @@ button:hover::before {
 
 .sign svg {
   width: 25px;
+  background:#00d757;
 }
 
 .sign svg path {
@@ -653,14 +648,7 @@ button:hover::before {
   background: #00d757;
 }
 
-.sign {
-  background:#00d757;
-  width: 100%;
-  transition-duration: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .sign svg {
   width: 25px;

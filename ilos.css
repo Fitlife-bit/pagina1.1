@@ -528,7 +528,6 @@ i{
 
 
 button {
-  flex-direction: row-reverse;
   justify-content: space-evenly;
   background: transparent;
   position: relative;
@@ -537,7 +536,6 @@ button {
   align-items: center;
   font-size: 17px;
   font-weight: 600;
-  text-decoration: none;
   cursor: pointer;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 25px;

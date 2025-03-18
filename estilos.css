@@ -1,5 +1,7 @@
 *{
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration:none;
+  color:white;
 }
 @font-face{ 
 font-family:tot; src: url(fuentes/fonnv.otf);

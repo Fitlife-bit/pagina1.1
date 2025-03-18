@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color:white;
+  text-decoration:none;
 }
 
 @font-face { 
@@ -127,7 +129,7 @@
   align-items: center;
 }
 .carousel-item img {
-  width: 100%;
+  width: 90%;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px; /* Espacio entre imagen y texto */

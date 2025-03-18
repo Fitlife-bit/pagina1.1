@@ -557,9 +557,7 @@ button:hover::before {
 
 
 
-.sign svg {
-  width: 25px;
-}
+
 
 .sign svg path {
   fill: white;
@@ -591,8 +589,8 @@ button:hover::before {
 }
 
 .sign svg {
-  width: 25px;
-  background:#00d757;
+    width: 25px;
+    background: #00d757;
 }
 
 .sign svg path {
@@ -650,9 +648,6 @@ button:hover::before {
 
 
 
-.sign svg {
-  width: 25px;
-}
 
 .sign svg path {
   fill: white;

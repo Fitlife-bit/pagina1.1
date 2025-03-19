@@ -493,6 +493,10 @@ i{
 .sign svg path {
   fill: white;
 }
+.sign svg {
+  width: 25px;
+  background: #00d757;
+}
 .text {
   position: absolute;
   right: 0%;
@@ -502,7 +506,7 @@ i{
   font-size: 1.2em;
   font-weight: 600;
   transition-duration: 0.3s;
-   background-color: #00d757;
+  background-color: #00d757;
 }
 
 .Btn:hover {

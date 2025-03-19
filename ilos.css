@@ -8,7 +8,10 @@
   text-decoration:none;
   
 }
-
+.sign svg {
+    width: 25px;
+    background: #00d757;
+}
 
 @font-face { font-family: tot; src: url(fuentes/fonnv.otf); }
 @font-face { font-family: tit; src: url(fuentes/gre.otf); }
@@ -84,7 +87,6 @@ textarea:focus {
 }
 
 button {
-  width: 100%;
   background-color: rgb(55, 53, 53);
   color: white;
   border: none;

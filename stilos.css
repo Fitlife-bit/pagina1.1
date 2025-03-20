@@ -973,7 +973,7 @@ footer .container .link-container .navigation {
 }
 
 button {
-
+  margin-left:20%;
   background: transparent;
   position: relative;
   padding: 5px 15px;

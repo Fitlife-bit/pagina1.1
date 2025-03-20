@@ -1025,6 +1025,5 @@ button:hover::before {
         }
         .boton-flotante img {
             width: 40px; 
-            height: 40px;
-        }
-
+            height:40px;
+}

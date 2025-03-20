@@ -111,7 +111,6 @@
   max-width: 800px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }

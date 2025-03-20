@@ -614,6 +614,7 @@ button:hover.Btn{
             transform: scale(1.1);
         }
         .boton-flotante img {
-            width: 40px; /* Ajusta el tamaño del icono según sea necesario */
+            width: 40px; 
             height: 40px;
+           background-color: #25d366;
         }

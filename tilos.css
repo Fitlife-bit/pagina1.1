@@ -729,3 +729,32 @@ button:hover::before {
 }
 
 
+
+.boton-flotante {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .boton-flotante:hover {
+            transform: scale(1.1);
+        }
+        .boton-flotante img {
+            width: 40px; /* Ajusta el tamaño del icono según sea necesario */
+            height: 40px;
+        }
+
+
